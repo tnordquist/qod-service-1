@@ -54,6 +54,6 @@ public class QodApplication extends ResourceServerConfigurerAdapter {
   public void configure(HttpSecurity http) throws Exception {
     http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     http.authorizeRequests().anyRequest().hasRole("USER");
-    //    http.authorizeRequests().anyRequest().anonymous();
   }
+
 }
